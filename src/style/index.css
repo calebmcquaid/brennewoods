@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: "Literata", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  height: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-size: 100%;
+  width: 100%;
+  transition: height 0.6s, background-color 0.6s;
+}
+
+.navbar h2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 1em;
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.6s;
+}
+
+.navbar div {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 1em;
+  color: rgba(255, 255, 255);
+  transition: color 0.6s;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.navbar--hidden {
+  background-color: rgba(255, 255, 255, 1);
+  height: 3em;
+}
+
+.navbar--hidden h2 {
+  color: black;
+}
+
+.navbar--hidden a {
+  color: black;
+}
