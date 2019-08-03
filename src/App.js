@@ -4,6 +4,7 @@ import "./style/App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class App extends React.Component {
         <Navbar />
         <Hero />
         <Grid />
+        <Footer />
       </div>
     );
   }

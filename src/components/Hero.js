@@ -41,8 +41,8 @@ const Hero = () => {
         <HeroImage src={heroImg} alt="woodworking under magnifier" />
       </Comp>
       <TextDiv>
-        <h1>I'm Sam Brenneman</h1>
-        <p>
+        <h1>I&rsquo;m Sam Brenneman</h1>
+        <p style={{ fontSize: "20px" }}>
           I work with my hands to make beautiful household objects that have a
           unique flair to them. I started making pieces for my friends, family,
           and grandchildren. People seem to enjoy my work and I now have an Etsy

@@ -8,23 +8,19 @@ import Img5 from "../images/image5.png";
 
 const Background = styled.div`
   margin-top: 6em;
-  background: rgb(119, 53, 52);
-  background: -moz-linear-gradient(
-    45deg,
-    rgba(119, 53, 52, 1) 0%,
-    rgba(77, 55, 45, 1) 100%
-  );
+  background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    45deg,
-    rgba(119, 53, 52, 1) 0%,
-    rgba(77, 55, 45, 1) 100%
-  );
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    45deg,
-    rgba(119, 53, 52, 1) 0%,
-    rgba(77, 55, 45, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#773534",endColorstr="#4d372d",GradientType=1);
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 3em;
 `;
 
@@ -32,7 +28,7 @@ const PhotoGrid = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   width: 70%;
@@ -58,33 +54,33 @@ const Image1 = styled.img`
   width: 100%;
   height: 27.59em;
   object-fit: cover;
-  box-shadow: 1px 1px 30px 0.5px;
+  box-shadow: 0px 1px 5px -1px;
 `;
 
 const Image2 = styled.img`
   width: 100%;
   height: 27.59em;
   object-fit: cover;
-  box-shadow: 1px 1px 30px 0.5px;
+  box-shadow: 0px 1px 5px -1px;
 `;
 
 const Image3 = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 1px 1px 30px 0.5px;
+  box-shadow: 0px 1px 5px -1px;
 `;
 
 const Image4 = styled.img`
   width: 100%;
-  box-shadow: 1px 1px 30px 0.5px;
+  box-shadow: 0px 1px 5px -1px;
 `;
 
 const Image5 = styled.img`
   width: 100%;
   height: 42.2em;
   object-fit: cover;
-  box-shadow: 1px 1px 30px 0.5px;
+  box-shadow: 0px 1px 5px -1px;
 `;
 
 const CenteredDiv = styled.div`
