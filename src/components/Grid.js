@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Img1 from "../images/image1.png";
 import Img2 from "../images/image2.png";
-import Img3 from "../images/image3.png";
-import Img4 from "../images/image4.png";
-import Img5 from "../images/image5.png";
+import Img3 from "../images/image3-copy.png";
+import Img4 from "../images/image4-copy.png";
+import Img5 from "../images/image5-copy.png";
 
 const Background = styled.div`
   margin-top: 6em;
