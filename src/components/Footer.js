@@ -11,6 +11,10 @@ const TitleDiv = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 2.5em;
+  div {
+    display: flex;
+    align-items: baseline;
+  }
   p {
     margin-bottom: 5px;
   }
@@ -32,13 +36,23 @@ const MenuDiv = styled.div`
     text-decoration: none;
     list-style: none;
   }
+
+  div > li > a {
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 const Footer = () => {
   return (
     <FooterDiv>
       <TitleDiv>
-        <p>Brennewoods - Custom woodworking by Sam Brenneman</p>
+        <div>
+          <p style={{ fontSize: "18px" }}>Brennewoods&nbsp;</p>
+          <p style={{ fontSize: "15px" }}>
+            - Custom woodworking by Sam Brenneman
+          </p>
+        </div>
         <li>&copy; Copyright 2019</li>
       </TitleDiv>
       <MenuDiv>

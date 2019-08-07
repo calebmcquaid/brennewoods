@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import classnames from "classnames";
+import App from "../App";
+import Portfolio from "../Portfolio";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -36,18 +38,20 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav
-        className={classnames("navbar", {
-          "navbar--hidden": !this.state.visible
-        })}
-      >
-        <h2>Brennewoods</h2>
-        <div>
-          <a href="#">Portfolio Page</a>
-          <a href="#">Contact Me</a>
-          <a href="#">Shop</a>
-        </div>
-      </nav>
+      <div>
+        <nav
+          className={classnames("navbar", {
+            "navbar--hidden": !this.state.visible
+          })}
+        >
+          <h2>Brennewoods</h2>
+          <div>
+            <a href="#">Portfolio Page</a>
+            <a href="#">Contact Me</a>
+            <a href="#">Shop</a>
+          </div>
+        </nav>
+      </div>
     );
   }
 }

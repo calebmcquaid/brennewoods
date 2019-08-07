@@ -15,6 +15,8 @@ const fadeIn = keyframes`
 const Comp = styled.div`
   animation: ${fadeIn} 2s linear;
   margin-right: -5em;
+  display: flex;
+  justify-content: space-around;
 `;
 
 const HeroImage = styled.img`
@@ -36,19 +38,20 @@ const TextDiv = styled.div`
 
 const Hero = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "space-around" }}>
+    <div>
       <Comp>
-        <HeroImage src={heroImg} alt="woodworking under magnifier" />
+        <HeroImage src={heroImg} alt="woodworking with chainsaw" />
+
+        <TextDiv>
+          <h1>I&rsquo;m Sam Brenneman</h1>
+          <p style={{ fontSize: "20px" }}>
+            I work with my hands to make beautiful household objects that have a
+            unique flair to them. I started making pieces for my friends,
+            family, and grandchildren. People seem to enjoy my work and I now
+            have an Etsy shop where I sell my latest creations.
+          </p>
+        </TextDiv>
       </Comp>
-      <TextDiv>
-        <h1>I&rsquo;m Sam Brenneman</h1>
-        <p style={{ fontSize: "20px" }}>
-          I work with my hands to make beautiful household objects that have a
-          unique flair to them. I started making pieces for my friends, family,
-          and grandchildren. People seem to enjoy my work and I now have an Etsy
-          shop where I sell my latest creations.
-        </p>
-      </TextDiv>
     </div>
   );
 };

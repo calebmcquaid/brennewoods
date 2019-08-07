@@ -99,19 +99,19 @@ const Grid = () => {
         <h1>Work Samples</h1>
       </CenteredDiv>
       <PhotoGrid>
-        <div class="div1">
+        <div className="div1">
           <Image1 src={Img1} />
         </div>
-        <div class="div2">
+        <div className="div2">
           <Image2 src={Img2} />
         </div>
-        <div class="div3">
+        <div className="div3">
           <Image3 src={Img3} />
         </div>
-        <div class="div4">
+        <div className="div4">
           <Image4 src={Img4} />
         </div>
-        <div class="div5">
+        <div className="div5">
           <Image5 src={Img5} />
         </div>
       </PhotoGrid>

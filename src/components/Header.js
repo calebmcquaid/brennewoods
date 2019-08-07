@@ -19,7 +19,7 @@ const Banner = styled.div`
   }
 `;
 
-const Header = () => {
+const HeaderHero = () => {
   return (
     <Banner>
       <h1>Handmade woodwork, crafted with care</h1>
@@ -27,4 +27,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderHero;
