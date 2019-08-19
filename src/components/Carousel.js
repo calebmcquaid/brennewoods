@@ -1,63 +1,58 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Img1 from "../images/image1.png";
 import Img2 from "../images/image2.png";
 import Img3 from "../images/image3.png";
+import styled from "styled-components";
 
-class DemoCarousel extends Component {
-  render() {
-    return (
-      <div style={{ marginTop: "3em" }}>
-        <h1 style={{ marginLeft: "1em" }}>{this.props.title}</h1>
-        <Carousel
-          dynamicHeight
-          showStatus={false}
-          showThumbs={false}
-          style={{ margin: "40px", backgroundColor: "white" }}
-        >
-          <div
-            style={{
-              backgroundColor: "white",
-              height: "350px",
-              width: "500px",
-              display: "flex",
-              justifyContent: "center",
-              margin: "0 auto"
-            }}
-          >
-            <img src={Img1} style={{ maxWidth: "100%", height: "auto" }} />
-            <p className="legend">Cutting Boards for Makers Market</p>
-          </div>
-          <div
-            style={{
-              height: "350px",
-              width: "500px",
-              display: "flex",
-              justifyContent: "center",
-              margin: "0 auto"
-            }}
-          >
-            <img src={Img2} style={{ maxWidth: "100%", height: "auto" }} />
-            <p className="legend">Makers Market Booth</p>
-          </div>
-          <div
-            style={{
-              height: "350px",
-              width: "500px",
-              display: "flex",
-              justifyContent: "center",
-              margin: "0 auto"
-            }}
-          >
-            <img src={Img3} style={{ maxWidth: "100%", height: "100%" }} />
-            <p className="legend">Cross section cutting board</p>
-          </div>
-        </Carousel>
-      </div>
-    );
-  }
-}
+const ImgDiv = styled.div`
+  width: 30em !important;
+  height: 30em;
+  background: cover;
+  margin: 20px;
+`;
 
-export default DemoCarousel;
+const ImageHolder = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+const Carousel = () => {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: true,
+    width: 75
+  };
+  return (
+    <div>
+      <Slider {...settings}>
+        <ImgDiv>
+          <ImageHolder src={Img1} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Img2} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Img3} />
+        </ImgDiv>
+        <ImgDiv>
+          <h3>4</h3>
+        </ImgDiv>
+        <ImgDiv>
+          <h3>5</h3>
+        </ImgDiv>
+        <ImgDiv>
+          <h3>6</h3>
+        </ImgDiv>
+      </Slider>
+    </div>
+  );
+};
+
+export default Carousel;
