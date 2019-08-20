@@ -7,7 +7,8 @@ const Portfolio = title => {
   return (
     <div>
       <Navbar />
-      <Carousel />
+      <Carousel title="Cutting Boards" />
+      <Carousel title="Events" />
     </div>
   );
 };
