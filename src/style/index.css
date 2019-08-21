@@ -65,3 +65,75 @@ code {
 .navbar--hidden a {
   color: black;
 }
+
+@media (max-width: 320px) {
+  body {
+    margin: 0;
+    font-family: "Literata", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+      "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.6px;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+
+  .navbar {
+    width: 320px;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-size: 100%;
+    transition: height 0.6s, background-color 0.6s, margin-top 0.6s;
+    z-index: 1;
+  }
+
+  .navbar h2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 0.3em;
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.6s;
+    font-size: 1em;
+  }
+
+  .navbar div {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 0.3em;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    margin-right: 1em;
+    color: rgba(255, 255, 255);
+    transition: color 0.6s;
+    font-size: 0.5em;
+    font-weight: 600;
+  }
+
+  .navbar--hidden {
+    background-color: rgba(255, 255, 255, 1);
+    height: 4em;
+    width: 320px;
+    z-index: inherit;
+  }
+
+  .navbar--hidden h2 {
+    color: black;
+  }
+
+  .navbar--hidden a {
+    color: black;
+  }
+}
