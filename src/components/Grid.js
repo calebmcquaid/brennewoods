@@ -22,6 +22,9 @@ const Background = styled.div`
     #0f2027
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 3em;
+  @media (max-width: 576px) {
+    width: 406px;
+  }
 `;
 
 const PhotoGrid = styled.div`
@@ -47,6 +50,27 @@ const PhotoGrid = styled.div`
   }
   .div5 {
     grid-area: 4 / 1 / 9 / 7;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .div1 {
+      margin-bottom: 1em;
+    }
+    .div2 {
+      margin-bottom: 1em;
+    }
+    .div3 {
+      margin-bottom: 1em;
+    }
+    .div4 {
+      margin-bottom: 1em;
+    }
+    .div5 {
+      margin-bottom: 1em;
+    }
   }
 `;
 

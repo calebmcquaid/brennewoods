@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled, { keyframes } from "styled-components";
 import heroImg from "../images/heroImg.png";
 
@@ -14,9 +14,12 @@ const fadeIn = keyframes`
 
 const Comp = styled.div`
   animation: ${fadeIn} 2s linear;
-  margin-right: -5em;
   display: flex;
   justify-content: space-around;
+  width: 100%l @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const HeroImage = styled.img`
@@ -24,16 +27,31 @@ const HeroImage = styled.img`
   height: 25em;
   margin-top: 5em;
   margin-left: 5em;
+  @media (max-width: 576px) {
+    width: 20em;
+    height: 20em;
+  }
 `;
 
 const TextDiv = styled.div`
-  width: 30em;
+  width: 10em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 6em;
   margin-right: 5em;
-  margin-left: -5em;
+  @media (max-width: 576px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-left: 6em;
+    h1 {
+      font-size: 31px;
+    }
+  }
 `;
 
 const Hero = () => {

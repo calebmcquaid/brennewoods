@@ -5,6 +5,9 @@ const FooterDiv = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1.5em;
+  @media (max-width: 576px) {
+    width: 454px;
+  }
 `;
 
 const TitleDiv = styled.div`
@@ -21,6 +24,21 @@ const TitleDiv = styled.div`
   li {
     list-style: none;
     font-size: 14px;
+  }
+  @media (max-width: 576px) {
+    margin: 0em;
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+    p:nth-child(2) {
+      margin-bottom: 5px;
+    }
   }
 `;
 
@@ -40,6 +58,17 @@ const MenuDiv = styled.div`
   div > li > a {
     text-decoration: none;
     color: black;
+  }
+  @media (max-width: 576px) {
+    margin: 0em;
+    display: flex;
+    flex-direction: column;
+    div {
+      margin: 1em 1em 0em 1em;
+    }
+    div:nth-child(2) {
+      margin: 0em 1em;
+    }
   }
 `;
 

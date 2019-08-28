@@ -6,7 +6,6 @@ import Img1 from "../images/image1.png";
 import Img2 from "../images/image2.png";
 import Img3 from "../images/image3.png";
 import styled from "styled-components";
-import "../style/Arrows.scss";
 
 const CarouselHeader = styled.h2`
   margin: 20px 0px 5px 20px;

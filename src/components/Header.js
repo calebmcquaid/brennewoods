@@ -10,12 +10,32 @@ const Banner = styled.div`
   background-size: 100%;
   width: 100%;
   height: 25em;
+  margin-top: 5.3em;
 
   h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+  }
+
+  @media (max-width: 576px) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url(${img});
+    background-size: 100%;
+    width: 500px;
+    height: 15em;
+    margin-top: 5.3em;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 22px;
+    }
   }
 `;
 
