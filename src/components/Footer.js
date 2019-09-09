@@ -6,7 +6,15 @@ const FooterDiv = styled.div`
   justify-content: space-between;
   padding: 1.5em;
   @media (max-width: 576px) {
-    width: 454px;
+    width: 100%;
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
   }
 `;
 
@@ -40,6 +48,14 @@ const TitleDiv = styled.div`
       margin-bottom: 5px;
     }
   }
+  @media (min-width: 577px) and (max-width: 768px) {
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+  }
 `;
 
 const MenuDiv = styled.div`
@@ -69,6 +85,14 @@ const MenuDiv = styled.div`
     div:nth-child(2) {
       margin: 0em 1em;
     }
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
   }
 `;
 

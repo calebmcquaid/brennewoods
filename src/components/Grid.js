@@ -23,7 +23,15 @@ const Background = styled.div`
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 3em;
   @media (max-width: 576px) {
-    width: 406px;
+    width: 100%;
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
   }
 `;
 
@@ -71,6 +79,15 @@ const PhotoGrid = styled.div`
     .div5 {
       margin-bottom: 1em;
     }
+  }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
   }
 `;
 

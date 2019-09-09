@@ -16,9 +16,18 @@ const Comp = styled.div`
   animation: ${fadeIn} 2s linear;
   display: flex;
   justify-content: space-around;
-  width: 100%l @media (max-width: 576px) {
+  width: 100%;
+  @media (max-width: 576px) {
     display: flex;
     flex-direction: column;
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
   }
 `;
 
@@ -30,6 +39,14 @@ const HeroImage = styled.img`
   @media (max-width: 576px) {
     width: 20em;
     height: 20em;
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
   }
 `;
 
@@ -51,6 +68,15 @@ const TextDiv = styled.div`
     h1 {
       font-size: 31px;
     }
+  }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
   }
 `;
 
