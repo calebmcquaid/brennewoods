@@ -16,7 +16,7 @@ const Banner = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: green;
   }
 
   @media (max-width: 576px) {
