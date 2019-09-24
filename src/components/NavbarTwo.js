@@ -5,7 +5,7 @@ const Styled = styled.div`
   width: 100%;
   padding: 10px;
   position: fixed;
-  height: 12em;
+  height: 4em;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.9);

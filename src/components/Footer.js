@@ -6,7 +6,6 @@ const FooterDiv = styled.div`
   justify-content: space-between;
   padding: 1.5em;
   @media (max-width: 576px) {
-    width: 100%;
   }
   @media (min-width: 577px) and (max-width: 768px) {
   }
@@ -110,7 +109,7 @@ const Footer = () => {
       </TitleDiv>
       <MenuDiv>
         <div>
-          <li>
+          <li href="#">
             <a href="#">About</a>
           </li>
           <li>

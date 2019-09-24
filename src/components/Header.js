@@ -25,9 +25,8 @@ const Banner = styled.div`
     align-content: center;
     background-image: url(${img});
     background-size: 100%;
-    width: 500px;
     height: 15em;
-    margin-top: 5.3em;
+    margin-top: 0;
 
     h1 {
       display: flex;
