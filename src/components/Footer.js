@@ -48,6 +48,20 @@ const TitleDiv = styled.div`
     }
   }
   @media (min-width: 577px) and (max-width: 768px) {
+    margin: 0em;
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+    p:nth-child(2) {
+      margin-top: 3px;
+      margin-bottom: 5px;
+    }
   }
 
   @media (min-width: 769px) and (max-width: 992px) {
@@ -86,6 +100,14 @@ const MenuDiv = styled.div`
     }
   }
   @media (min-width: 577px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    div {
+      margin: 0em 1em 0em 1em;
+    }
+    div:nth-child(2) {
+      margin: 0em 1em;
+    }
   }
 
   @media (min-width: 769px) and (max-width: 992px) {

@@ -40,7 +40,7 @@ const Styled = styled.div`
   @media (max-width: 576px) {
     width: 100%;
     padding: 5px;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: rgba(255, 255, 255, 0.9);
     height: 4em;
@@ -74,9 +74,6 @@ const Styled = styled.div`
       font-size: 0.8em;
       font-weight: 600;
     }
-  }
-
-  @media (min-width: 577px) and (max-width: 768px) {
   }
 
   @media (min-width: 769px) and (max-width: 992px) {

@@ -16,7 +16,7 @@ const Banner = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: green;
+    color: white;
   }
 
   @media (max-width: 576px) {
@@ -26,17 +26,17 @@ const Banner = styled.div`
     background-image: url(${img});
     background-size: 100%;
     height: 15em;
-    margin-top: 0;
+    margin-top: 5em;
 
     h1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
       font-size: 22px;
     }
   }
   @media (min-width: 577px) and (max-width: 768px) {
+    height: 17.5em;
+    h1 {
+      font-size: 24px;
+    }
   }
 
   @media (min-width: 769px) and (max-width: 992px) {

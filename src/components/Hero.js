@@ -15,7 +15,7 @@ const fadeIn = keyframes`
 const Comp = styled.div`
   animation: ${fadeIn} 2s linear;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   @media (max-width: 576px) {
     display: flex;
@@ -24,6 +24,10 @@ const Comp = styled.div`
     text-align: center;
   }
   @media (min-width: 577px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
   @media (min-width: 769px) and (max-width: 992px) {
@@ -40,11 +44,15 @@ const HeroImage = styled.img`
   margin-left: 5em;
   @media (max-width: 576px) {
     display: flex;
-    margin: 2.5em auto 0em;
+    margin: 2.5em auto 0em auto;
     width: 20em;
     height: 20em;
   }
   @media (min-width: 577px) and (max-width: 768px) {
+    display: flex;
+    margin: 2.5em auto 0em;
+    width: 20em;
+    height: 20em;
   }
 
   @media (min-width: 769px) and (max-width: 992px) {
@@ -55,23 +63,38 @@ const HeroImage = styled.img`
 `;
 
 const TextDiv = styled.div`
-  width: 10em;
+  width: 25em;
+  height: 25em;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   margin-top: 6em;
   margin-right: 5em;
   p {
     font-size: 20px;
   }
   @media (max-width: 576px) {
+    height: 100%;
+    width: 100%;
     margin-top: 1em;
-    font-size: 1px;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 31px;
+    }
+    p {
+      font-size: 18px;
+      margin: 0em 1.5em 0em 1.5em;
+    }
+  }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    margin-top: 1em;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     h1 {
       font-size: 31px;
     }
@@ -79,9 +102,6 @@ const TextDiv = styled.div`
       font-size: 18px;
       margin: 0em 1.5em;
     }
-  }
-
-  @media (min-width: 577px) and (max-width: 768px) {
   }
 
   @media (min-width: 769px) and (max-width: 992px) {

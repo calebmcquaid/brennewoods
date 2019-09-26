@@ -90,6 +90,31 @@ const PhotoGrid = styled.div`
   }
 
   @media (min-width: 577px) and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    .div1 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .div2 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .div3 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .div4 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .div5 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
   }
 
   @media (min-width: 769px) and (max-width: 992px) {
@@ -101,6 +126,7 @@ const PhotoGrid = styled.div`
 
 const Image1 = styled.img`
   width: 100%;
+  height: 100%;
   box-shadow: 0px 1px 5px -1px;
   @media (max-width: 576px) {
     width: 100%;
@@ -109,14 +135,14 @@ const Image1 = styled.img`
 
 const Image2 = styled.img`
   width: 100%;
-  height: 27.59em;
+  height: 100%;
   object-fit: cover;
   box-shadow: 0px 1px 5px -1px;
 `;
 
 const Image3 = styled.img`
   width: 100%;
-  height: 100%;
+  height: 102%;
   object-fit: cover;
   box-shadow: 0px 1px 5px -1px;
 `;
