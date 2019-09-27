@@ -40,9 +40,7 @@ const Banner = styled.div`
   }
 
   @media (min-width: 769px) and (max-width: 992px) {
-  }
-
-  @media (min-width: 993px) and (max-width: 1200px) {
+    height: 21em;
   }
 `;
 

@@ -5,16 +5,6 @@ const FooterDiv = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1.5em;
-  @media (max-width: 576px) {
-  }
-  @media (min-width: 577px) and (max-width: 768px) {
-  }
-
-  @media (min-width: 769px) and (max-width: 992px) {
-  }
-
-  @media (min-width: 993px) and (max-width: 1200px) {
-  }
 `;
 
 const TitleDiv = styled.div`
@@ -65,9 +55,20 @@ const TitleDiv = styled.div`
   }
 
   @media (min-width: 769px) and (max-width: 992px) {
-  }
-
-  @media (min-width: 993px) and (max-width: 1200px) {
+    margin: 0em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em div {
+      display: flex;
+      flex-direction: column;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+    p:nth-child(2) {
+      margin-top: 3px;
+      margin-bottom: 5px;
+    }
   }
 `;
 
@@ -109,12 +110,6 @@ const MenuDiv = styled.div`
       margin: 0em 1em;
     }
   }
-
-  @media (min-width: 769px) and (max-width: 992px) {
-  }
-
-  @media (min-width: 993px) and (max-width: 1200px) {
-  }
 `;
 
 const Footer = () => {
@@ -131,7 +126,7 @@ const Footer = () => {
       </TitleDiv>
       <MenuDiv>
         <div>
-          <li href="#">
+          <li>
             <a href="#">About</a>
           </li>
           <li>
@@ -143,7 +138,7 @@ const Footer = () => {
             <a href="#">Contact</a>
           </li>
           <li>
-            <a href="#">Shop</a>
+            <a href="https://www.etsy.com/shop/BrenneWoods">Shop</a>
           </li>
         </div>
       </MenuDiv>

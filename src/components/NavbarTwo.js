@@ -75,12 +75,6 @@ const Styled = styled.div`
       font-weight: 600;
     }
   }
-
-  @media (min-width: 769px) and (max-width: 992px) {
-  }
-
-  @media (min-width: 993px) and (max-width: 1200px) {
-  }
 `;
 
 const NavbarTwo = () => {
@@ -90,7 +84,7 @@ const NavbarTwo = () => {
       <div>
         <a href="#">Portfolio Page</a>
         <a href="#">Contact Me</a>
-        <a href="#">Shop</a>
+        <a href="https://www.etsy.com/shop/BrenneWoods">Shop</a>
       </div>
     </Styled>
   );

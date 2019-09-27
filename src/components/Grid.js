@@ -27,14 +27,6 @@ const Background = styled.div`
     flex-direction: column;
     justify-content: center;
   }
-  @media (min-width: 577px) and (max-width: 768px) {
-  }
-
-  @media (min-width: 769px) and (max-width: 992px) {
-  }
-
-  @media (min-width: 993px) and (max-width: 1200px) {
-  }
 `;
 
 const PhotoGrid = styled.div`
@@ -118,9 +110,31 @@ const PhotoGrid = styled.div`
   }
 
   @media (min-width: 769px) and (max-width: 992px) {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    .div1 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .div2 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .div3 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .div4 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .div5 {
+      width: 100%;
+      margin-bottom: 1em;
+    }
   }
-
-  @media (min-width: 993px) and (max-width: 1200px) {
   }
 `;
 
