@@ -86,14 +86,6 @@ const Styled = styled.div`
   }
 `;
 
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
-
 // const NavbarTwo = () => {
 //   return (
 //     <Styled>
@@ -114,19 +106,20 @@ function App() {
     <Router>
       <Styled>
         <h2>
-          <Link to="/">BrenneWoods</Link>
+          <Link style={{ textDecoration: "none", color: "black" }} to="/">
+            BrenneWoods
+          </Link>
         </h2>
         <div>
           <Link to="/portfolio/">Portfolio</Link>
 
-          <a href="">
+          <a href="mailto:brennewoods@gmail.com">
             <p>Contact Me</p>
           </a>
         </div>
       </Styled>
       <Route path="/" exact component={Home} />
       <Route path="/portfolio/" component={Portfolio} />
-      <Route path="/users/" component={Users} />
     </Router>
   );
 }

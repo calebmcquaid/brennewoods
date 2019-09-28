@@ -83,7 +83,7 @@ const NavbarTwo = () => {
       <h2>Brennewoods</h2>
       <div>
         <a href="#">Portfolio Page</a>
-        <a href="#">Contact Me</a>
+        <a href="mailto:brennewoods@gmail.com">Contact Me</a>
         <a href="https://www.etsy.com/shop/BrenneWoods">Shop</a>
       </div>
     </Styled>

@@ -135,7 +135,7 @@ const Footer = () => {
         </div>
         <div>
           <li>
-            <a href="#">Contact</a>
+            <a href="mailto:brennewoods@gmail.com">Contact</a>
           </li>
           <li>
             <a href="https://www.etsy.com/shop/BrenneWoods">Shop</a>
