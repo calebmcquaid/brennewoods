@@ -1,21 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import "../style/App.css";
-import Carousel from "../components/Carousel";
+import CBCarousel from "../components/CBCarousel";
+import EventsCarousel from "../components/EventsCarousel";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const Background = styled.div`
-  margin-top: 6em;
   background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to top,
+    to bottom,
     #2c5364,
     #203a43,
     #0f2027
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to top,
+    to bottom,
     #2c5364,
     #203a43,
     #0f2027
@@ -33,9 +33,9 @@ const Portfolio = title => {
     <div>
       <Header />
       <Background>
-        <Carousel title="Cutting Boards" />
+        <CBCarousel title="Cutting Boards" />
         <hr style={{ marginTop: "3em", borderColor: "rgba(194, 97, 0, .5)" }} />
-        <Carousel title="Events" />
+        <EventsCarousel title="Events" />
       </Background>
       <Footer />
     </div>

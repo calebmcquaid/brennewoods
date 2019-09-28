@@ -7,12 +7,6 @@ import Img2 from "../images/image2.png";
 import Img3 from "../images/image3.png";
 import styled from "styled-components";
 
-const breakpoints = {
-  desktop: 1040,
-  tablet: 840,
-  mobile: 540
-};
-
 const CarouselHeader = styled.h2`
   margin: 20px 0px 5px 20px;
   color: white;
@@ -30,23 +24,37 @@ const ImageHolder = styled.img`
   height: 100%;
 `;
 
-const Carousel = props => {
+const EventsCarousel = props => {
   const settings = {
     dots: true,
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 3,
     arrows: true,
-    className: "slides"
+    className: "slides",
+    responsive: [
+      {
+        breakpoint: 1450,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1085,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
-  if (window.innerWidth > breakpoints.tablet) {
-    settings.slidesToShow = 1;
-  } else if (window.innerWidth > breakpoints.mobile) {
-    settings.slidesToShow = 1;
-  } else if (window.innerWidth <= breakpoints.mobile) {
-    settings.slidesToShow = 1;
-  }
-  //works on page load. need to update on DOM change
 
   return (
     <div style={{ width: "100%", margin: "0 auto", padding: "10px" }}>
@@ -75,4 +83,4 @@ const Carousel = props => {
   );
 };
 
-export default Carousel;
+export default EventsCarousel;
