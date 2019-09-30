@@ -13,16 +13,18 @@ const CarouselHeader = styled.h2`
   opacity: 0.9;
 `;
 
-const ImgDiv = styled.div`
+const ImageHolder = styled.img`
   width: 20em !important;
   height: 20em;
   margin: 20px;
 `;
 
-const ImageHolder = styled.img`
-  width: 100%;
-  height: 100%;
-`;
+// const people=['Per1', 'Per2', 'Per3']
+// {
+//   people.map(function(name, index){
+//     return <Person item={index} name={name}/>
+//   })
+// }
 
 const CBCarousel = props => {
   const settings = {
@@ -60,24 +62,17 @@ const CBCarousel = props => {
     <div style={{ width: "100%", margin: "0 auto", padding: "10px" }}>
       <CarouselHeader>{props.title}</CarouselHeader>
       <Slider {...settings}>
-        <ImgDiv>
-          <ImageHolder src={Img1} />
-        </ImgDiv>
-        <ImgDiv>
-          <ImageHolder src={Img2} />
-        </ImgDiv>
-        <ImgDiv>
-          <ImageHolder src={Img3} />
-        </ImgDiv>
-        <ImgDiv>
-          <ImageHolder src={Img1} />
-        </ImgDiv>
-        <ImgDiv>
-          <ImageHolder src={Img2} />
-        </ImgDiv>
-        <ImgDiv>
-          <ImageHolder src={Img3} />
-        </ImgDiv>
+        <ImageHolder src={Img1} />
+
+        <ImageHolder src={Img2} />
+
+        <ImageHolder src={Img3} />
+
+        <ImageHolder src={Img1} />
+
+        <ImageHolder src={Img2} />
+
+        <ImageHolder src={Img3} />
       </Slider>
     </div>
   );
