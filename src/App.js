@@ -112,7 +112,9 @@ function App() {
         </h2>
         <div>
           <Link to="/portfolio/">Portfolio</Link>
-
+          <a href="https://www.etsy.com/shop/BrenneWoods">
+            <p>Shop</p>
+          </a>
           <a href="mailto:brennewoods@gmail.com">
             <p>Contact Me</p>
           </a>

@@ -74,7 +74,7 @@ const TitleDiv = styled.div`
 
 const MenuDiv = styled.div`
   display: flex;
-  margin-right: 3em;
+  margin-right: 5em;
   div {
     display: flex;
     flex-direction: column;
@@ -104,7 +104,7 @@ const MenuDiv = styled.div`
     display: flex;
     flex-direction: column;
     div {
-      margin: 0em 1em 0em 1em;
+      margin: 1em 1em 0em 1em;
     }
     div:nth-child(2) {
       margin: 0em 1em;
@@ -127,13 +127,8 @@ const Footer = () => {
       <MenuDiv>
         <div>
           <li>
-            <a href="#">About</a>
+            <a href="/portfolio/">Portfolio</a>
           </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-        </div>
-        <div>
           <li>
             <a href="mailto:brennewoods@gmail.com">Contact</a>
           </li>

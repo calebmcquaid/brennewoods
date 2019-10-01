@@ -5,19 +5,19 @@ import "slick-carousel/slick/slick-theme.css";
 import Img1 from "../images/image1.png";
 import Img2 from "../images/image2.png";
 import Img3 from "../images/image3.png";
-import Cb1 from "../images/cutting-board/cb01.jpg"
-import Cb2 from "../images/cutting-board/cb02.jpg"
-import Cb3 from "../images/cutting-board/cb03.jpg"
-import Cb4 from "../images/cutting-board/cb04.jpg"
-import Cb5 from "../images/cutting-board/cb05.jpg"
-import Cb6 from "../images/cutting-board/cb06.jpg"
-import Cb7 from "../images/cutting-board/cb07.jpg"
-import Cb8 from "../images/cutting-board/cb08.jpg"
-import Cb9 from "../images/cutting-board/cb09.jpg"
-import Cb10 from "../images/cutting-board/cb10.jpg"
-import Cb11 from "../images/cutting-board/cb11.jpg"
-import Cb12 from "../images/cutting-board/cb12.jpg"
-import Cb13 from "../images/cutting-board/cb13.jpg"
+import Cb1 from "../images/cutting-board/cb01.jpg";
+import Cb2 from "../images/cutting-board/cb02.jpg";
+import Cb3 from "../images/cutting-board/cb03.jpg";
+import Cb4 from "../images/cutting-board/cb04.jpg";
+import Cb5 from "../images/cutting-board/cb05.jpg";
+import Cb6 from "../images/cutting-board/cb06.jpg";
+import Cb7 from "../images/cutting-board/cb07.jpg";
+import Cb8 from "../images/cutting-board/cb08.jpg";
+import Cb9 from "../images/cutting-board/cb09.jpg";
+import Cb10 from "../images/cutting-board/cb10.jpg";
+import Cb11 from "../images/cutting-board/cb11.jpg";
+import Cb12 from "../images/cutting-board/cb12.jpg";
+import Cb13 from "../images/cutting-board/cb13.jpg";
 
 import styled from "styled-components";
 
@@ -28,6 +28,12 @@ const CarouselHeader = styled.h2`
 `;
 
 const ImageHolder = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+const ImgDiv = styled.div`
   width: 20em !important;
   height: 20em;
   margin: 20px;
@@ -76,19 +82,45 @@ const CBCarousel = props => {
     <div style={{ width: "100%", margin: "0 auto", padding: "10px" }}>
       <CarouselHeader>{props.title}</CarouselHeader>
       <Slider {...settings}>
-        <ImageHolder src={Cb1} />
-        <ImageHolder src={Cb2} />
-        <ImageHolder src={Cb3} />
-        <ImageHolder src={Cb4} />
-        <ImageHolder src={Cb5} />
-        <ImageHolder src={Cb6} />
-        <ImageHolder src={Cb7} />
-        <ImageHolder src={Cb8} />
-        <ImageHolder src={Cb9} />
-        <ImageHolder src={Cb10} />
-        <ImageHolder src={Cb11} />
-        <ImageHolder src={Cb12} />
-        <ImageHolder src={Cb13} />
+        <ImgDiv>
+          <ImageHolder src={Cb1} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb2} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb3} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb4} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb5} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb6} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb7} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb8} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb9} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb10} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb11} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb12} />
+        </ImgDiv>
+        <ImgDiv>
+          <ImageHolder src={Cb13} />
+        </ImgDiv>
       </Slider>
     </div>
   );

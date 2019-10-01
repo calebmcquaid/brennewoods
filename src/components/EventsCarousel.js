@@ -22,6 +22,7 @@ const ImgDiv = styled.div`
 const ImageHolder = styled.img`
   width: 100%;
   height: 100%;
+  object-fit: cover;
 `;
 
 const EventsCarousel = props => {
@@ -65,18 +66,6 @@ const EventsCarousel = props => {
         </ImgDiv>
         <ImgDiv>
           <ImageHolder src={Img2} />
-        </ImgDiv>
-        <ImgDiv>
-          <ImageHolder src={Img3} />
-        </ImgDiv>
-        <ImgDiv>
-          <ImageHolder src={Img1} />
-        </ImgDiv>
-        <ImgDiv>
-          <ImageHolder src={Img2} />
-        </ImgDiv>
-        <ImgDiv>
-          <ImageHolder src={Img3} />
         </ImgDiv>
       </Slider>
     </div>
