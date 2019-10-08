@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import "../style/App.css";
 import CBCarousel from "../components/CBCarousel";
-import EventsCarousel from "../components/EventsCarousel";
-import ABCarousel from "../components/ABCarousel";
+import COCarousel from "../components/COCarousel";
+import WACarousel from "../components/WACarousel";
+import APCarousel from '../components/APCarousel';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -36,9 +37,11 @@ const Portfolio = title => {
       <Background>
         <CBCarousel title="Cutting Boards" />
         <hr style={{ marginTop: "3em", borderColor: "rgba(194, 97, 0, .5)" }} />
-        <ABCarousel title="Abstract" />
+        <WACarousel title="Wall Art" />
         <hr style={{ marginTop: "3em", borderColor: "rgba(194, 97, 0, .5)" }} />
-        <EventsCarousel title="Events" />
+        <COCarousel title="Custom Orders" />
+        <hr style={{ marginTop: "3em", borderColor: "rgba(194, 97, 0, .5)" }} />
+        <APCarousel title="Animal Puzzles" />
       </Background>
       <Footer />
     </div>
