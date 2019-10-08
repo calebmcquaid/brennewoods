@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
 
 const FooterDiv = styled.div`
   display: flex;
@@ -127,7 +128,7 @@ const Footer = () => {
       <MenuDiv>
         <div>
           <li>
-            <a href="/portfolio/">Portfolio</a>
+            <NavLink activeClassName="active" to="/portfolio/">Portfolio</NavLink>
           </li>
           <li>
             <a href="mailto:brennewoods@gmail.com">Contact</a>
