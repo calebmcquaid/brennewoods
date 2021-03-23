@@ -1,11 +1,6 @@
 import React from "react";
-import Grid from "./components/Grid";
 import "./style/App.css";
-import NavbarTwo from "./components/NavbarTwo";
-import HeaderHero from "./components/Header";
-import Footer from "./components/Footer";
 import Portfolio from "./pages/Portfolio";
-import Hero from "./components/Hero";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styled from "styled-components";
