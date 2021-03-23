@@ -2,6 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import img from "../images/updatedWoodHero.jpg";
 
+const DonateBanner = styled.div`
+display: flex;
+justify-content: center;
+align-content: center;
+height: 5em;
+width: 100%;
+background-color: yellow;
+margin-top: 7em;
+`
+
 const Banner = styled.div`
   display: flex;
   justify-content: center;
@@ -16,7 +26,6 @@ const Banner = styled.div`
   background-size: cover;
   width: 100%;
   height: 25em;
-  margin-top: 5.3em;
 
   h1 {
     display: flex;
@@ -58,9 +67,14 @@ const Banner = styled.div`
 
 const HeaderHero = () => {
   return (
+    <div style={{display: 'flex', flexDirection: 'column'}}>
+    <DonateBanner>
+      <h3 style={{marginTop: '25px'}}>Please consider donating to the <a href="https://www.gofundme.com/f/memorial-fund-for-sam-brenneman">Sam Brenneman memorial fund</a></h3>
+    </DonateBanner>
     <Banner>
       <h1>Handmade woodwork, crafted with care</h1>
     </Banner>
+    </div>
   );
 };
 
